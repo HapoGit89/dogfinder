@@ -1,0 +1,26 @@
+.NavBar img{
+   width: 200px;
+   height: auto;
+}
+
+.NavBar {
+    display: flex;
+    flex-direction: row;
+}
+
+.NavLink {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    
+    
+}
+
+
+.NavBar a {
+    color:black
+}
+
+.NavBar a.active{
+    color: blue;
+}

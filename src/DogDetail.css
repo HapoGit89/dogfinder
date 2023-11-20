@@ -1,0 +1,19 @@
+.DogDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: dashed;
+    padding: 5%;
+    max-width: 40vh;
+    margin: 10vh;
+    margin-left: 25%;
+}
+
+ul {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
