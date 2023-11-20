@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter, Route, Routes, Redirect } from "react-router-dom"
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom"
 import NavBar from "./NavBar"
 import DogDetail from "./DogDetail"
 
@@ -11,10 +11,10 @@ function DogList ({data}){
         <NavBar props={data.dogs}></NavBar>
         <Routes>
             {data.dogs.map(el => (
-                 <Route path={`/${el.name}`} element={<DogDetail data={el}></DogDetail>}></Route> ))}
+                 <Route path={`/dogs/${el.name}`} element={<DogDetail data={el}></DogDetail>}></Route> ))}
        
 
-                <Route path={`/`}></Route> 
+                <Route path={`/*`} element={<Navigate replace to="/dogs"></Navigate>}></Route> 
         </Routes>
         
       
